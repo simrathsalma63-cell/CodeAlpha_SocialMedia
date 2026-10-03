@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - ConnectHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar"><a class="brand" href="/">ConnectHub</a></nav>
+  <main class="auth-page">
+    <form id="registerForm" class="auth-card card">
+      <span class="eyebrow">Join ConnectHub</span>
+      <h1>Create account</h1>
+      <p class="muted">Build your profile and start sharing.</p>
+      <label>Username<input id="username" maxlength="50" required></label>
+      <label>Email<input id="email" type="email" required></label>
+      <label>Password<input id="password" type="password" minlength="6" required></label>
+      <label>Bio <span class="optional">(optional)</span><textarea id="bio" maxlength="255"></textarea></label>
+      <button class="btn primary full" type="submit">Create account</button>
+      <p class="auth-switch">Already registered? <a href="/login.html">Log in</a></p>
+      <p id="message" class="form-message"></p>
+    </form>
+  </main>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
